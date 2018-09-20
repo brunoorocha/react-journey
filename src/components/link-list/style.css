@@ -1,0 +1,14 @@
+
+.link-list > li {
+    margin: 16px 0;
+}
+
+.link-list > li > a {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    color: hsl(217, 71%, 53%);
+}
+
+.link-list > li > a:visited {    
+    color: hsl(217, 71%, 33%);
+}

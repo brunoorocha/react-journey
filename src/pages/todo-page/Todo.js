@@ -1,10 +1,11 @@
 import React from 'react'
+import Title from '../../components/title/Title'
 
 class Todo extends React.Component {
 
     render() {
         return (
-            <h1>My React To-do list</h1>
+            <Title>My React TODO List</Title>            
         )
     }
 }

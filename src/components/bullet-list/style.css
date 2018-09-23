@@ -1,0 +1,16 @@
+
+.bullet-list {
+    background-color: #f4f4f4;
+    padding: 8px 32px;
+}
+
+.bullet-list > li {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    margin: 8px 0;
+    color: #555;
+}
+
+.bullet-list > li:hover > .remove-button {
+    opacity: 1;
+}

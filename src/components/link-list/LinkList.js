@@ -1,6 +1,6 @@
 
 import React from 'react'
-import style from './style.css'
+import './style.css'
 
 class LinkList extends React.Component {
 

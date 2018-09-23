@@ -1,0 +1,16 @@
+
+.remove-button {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(0, 0%, 61%);    
+    background: transparent;
+    border: none;        
+    transition: .2s ease-out;
+    opacity: 0;
+}
+
+.remove-button:hover {    
+    color: hsl(348, 100%, 61%);
+    cursor: pointer;    
+}

@@ -1,20 +1,8 @@
 import React from 'react'
-import style from './style.css'
+import './style.css'
 
-class Subtitle extends React.Component {    
-    
-    constructor(props) {
-        super(props)
-
-        this.text = props.children
-    }
-
-    render() {
-        return (
-            <h4 className="subtitle">{ this.text }</h4>
-        )
-    }
-}
-
+const Subtitle = (props) => (
+    <h4 className="subtitle" >{ props.children }</h4>   
+)        
 
 export default Subtitle

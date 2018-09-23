@@ -5,20 +5,17 @@ import BulletList from '../bullet-list/BulletList'
 import TodoCreator from './TodoCreator'
 import './style.css'
 
-export default class TodoList extends React.Component {    
+const TodoList = (props) => (            
+    <TodoContextProvider>
+        <TodoContextConsumer>
+            { context => (
+                <React.Fragment>
+                    <BulletList itens={ context.itens } removeItemHandler={ context.removeItemAtIndex } />
+                    <TodoCreator addItemHandler={ context.addItem } />
+                </React.Fragment>
+            )}         
+        </TodoContextConsumer>                                                        
+    </TodoContextProvider>         
+)        
 
-    render() {
-        return (            
-            <TodoContextProvider>
-                <TodoContextConsumer>
-                    { value => (
-                        <React.Fragment>
-                            <BulletList itens={ value.itens } removeItemHandler={ value.removeItemAtIndex } />
-                            <TodoCreator addItemHandler={ value.addItem } />
-                        </React.Fragment>
-                    )}         
-                </TodoContextConsumer>                                                        
-            </TodoContextProvider>         
-        )        
-    }
-}
+export default TodoList

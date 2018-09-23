@@ -1,5 +1,6 @@
 
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default class TodoCreator extends React.Component {
 
@@ -43,4 +44,8 @@ export default class TodoCreator extends React.Component {
             </form>
         )
     }
+}
+
+TodoCreator.propTypes = {
+    addItemHandler: PropTypes.func.isRequired
 }

@@ -10,3 +10,7 @@
     margin: 8px 0;
     color: #555;
 }
+
+.bullet-list > li:hover > .remove-button {
+    opacity: 1;
+}

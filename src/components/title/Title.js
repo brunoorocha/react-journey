@@ -1,19 +1,8 @@
 import React from 'react'
-import style from './style.css'
+import './style.css'
 
-class Title extends React.Component {
-
-    constructor(props) {
-        super(props)
-
-        this.text = props.children
-    }
-
-    render() {
-        return (
-            <h1 className="title" >{ this.text }</h1>   
-        )        
-    }
-}
+const Title = (props) => (
+    <h1 className="title" >{ props.children }</h1>   
+)        
 
 export default Title

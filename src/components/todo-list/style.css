@@ -1,0 +1,21 @@
+
+.action-button {
+    font-family: "Source Sans Pro";    
+    font-size: 16px;
+    font-weight: 700;
+    background-color: hsl(217, 71%, 53%);
+    color: #fff;    
+    border: 1px solid hsl(217, 71%, 43%);
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+.text-field {
+    font-family: "Source Sans Pro";    
+    font-size: 16px;
+    border: 1px solid hsl(0, 0%, 71%);
+    border-radius: 4px;
+    padding: 8px;
+    margin-right: 8px;
+    width: 256px;
+}

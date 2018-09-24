@@ -1,9 +1,18 @@
 .row {
-    padding: 0 0;
+    padding: 0 16px;
+    margin: 8px 0;
     display: flex;
 }
 
-.col {
-    flex-grow: 1;
-    margin: 16px 16px;
+.col {    
+    flex-grow: 1;    
+}
+
+.col__align-items--center {    
+    align-self: center;
+}
+
+.col__justify-content--end {    
+    display: flex;
+    justify-content: flex-end;
 }

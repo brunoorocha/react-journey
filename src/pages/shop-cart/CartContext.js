@@ -33,7 +33,7 @@ export class CartContextProvider extends Component {
 
     render() {
         return (
-            <CartContext.Provider>
+            <CartContext.Provider value={ this.state.itens }>
                 { this.props.children }
             </CartContext.Provider>
         )

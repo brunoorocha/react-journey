@@ -4,8 +4,10 @@ import Title from '../../components/title/Title'
 import Subtitle from '../../components/subtitle/Subtitle'
 import Row from '../../components/grid/Row'
 import Col from '../../components/grid/Col'
+import Cart from '../../components/cart/Cart'
+import ProductList from '../../components/product/ProductList'
 
-const Cart = (props) => (
+const ShoppingCart = (props) => (
     <CartContextProvider>
         <Row>
             <Col>
@@ -14,16 +16,18 @@ const Cart = (props) => (
         </Row>
         <Row>
             <Col>
-                <Subtitle>Grid Colunm 1</Subtitle>
-            </Col>            
-            <Col>
-                <Subtitle>Grid Colunm 2</Subtitle>
-            </Col>   
-            <Col>
-                <Subtitle>Grid Colunm 3</Subtitle>
-            </Col>            
+                <Subtitle>Select some itens for your cart</Subtitle>
+            </Col>                                  
         </Row>
+        <Row>
+            <Col>
+                <ProductList />
+            </Col>          
+            <Col>
+                <Cart />
+            </Col>  
+        </Row>        
     </CartContextProvider>
 )
 
-export default Cart
+export default ShoppingCart

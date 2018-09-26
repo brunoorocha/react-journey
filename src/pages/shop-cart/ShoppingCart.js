@@ -1,5 +1,5 @@
 import React from 'react'
-import { CartContextProvider } from './CartContext'
+import { CartContextProvider, CartContextConsumer } from './CartContext'
 import Title from '../../components/title/Title'
 import Subtitle from '../../components/subtitle/Subtitle'
 import Row from '../../components/grid/Row'
@@ -24,7 +24,11 @@ const ShoppingCart = (props) => (
                 <ProductList />
             </Col>          
             <Col>
-                <Cart />
+                <CartContextConsumer>
+                    { context => (
+                        <Cart items={ context.items } removeItemHandler={ context.removeItemAtIndex } />
+                    )}
+                </CartContextConsumer>                 
             </Col>  
         </Row>        
     </CartContextProvider>

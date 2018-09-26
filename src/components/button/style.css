@@ -1,0 +1,13 @@
+
+.button {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    color: hsl(217, 71%, 53%);    
+}
+
+.button--red {
+    color: hsl(348, 100%, 61%);
+}

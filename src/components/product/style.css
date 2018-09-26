@@ -17,12 +17,3 @@
     font-weight: 400;
     color: #555;    
 }
-
-.product__add-to-cart-button {
-    font-family: "Source Sans Pro";
-    font-size: 16px;
-    font-weight: 700;
-    background-color: transparent;
-    border: none;
-    color: hsl(217, 71%, 53%);    
-}

@@ -5,35 +5,40 @@ const CartContext = React.createContext('cart')
 export class CartContextProvider extends Component {
 
     state = {
-        itens: []
-    }
-
-    constructor(props) {
-        super(props)
-
-        this.addItem = this.addItem.bind(this)
-    }
+        items: [
+            {
+                name: 'iPhone XS',
+                price: 999.00
+            },
+        ]
+    }         
 
     addItem = (item) => {
-        let itens = this.state.itens.slice()        
+        let items = this.state.items.slice()        
+        items = items.concat(item)
 
         this.setState({
-            itens: itens.concat(item)
-        })
+            items: items
+        })    
+        
     }
 
     removeItemAtIndex = (index) => {
-        let itens = this.state.itens.slice()
-        itens.splice(index, 1)
+        let items = this.state.items.slice()
+        items.splice(index, 1)
 
         this.setState({
-            itens: itens
-        })
+            items: items
+        })                        
     }
 
     render() {
         return (
-            <CartContext.Provider value={ this.state.itens }>
+            <CartContext.Provider value={{
+                items: this.state.items,
+                addItem: (item) => this.addItem(item),
+                removeItemAtIndex: (index) => this.removeItemAtIndex(index)
+            }}>
                 { this.props.children }
             </CartContext.Provider>
         )

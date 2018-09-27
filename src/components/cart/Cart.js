@@ -15,8 +15,13 @@ export class Cart extends Component {
   }    
 
   getTotalPrice = () => {
-    let prices = this.props.items.map( (item) => item.price )
-    return prices.reduce( (total, price) => ( total + price ))
+     
+    if (this.props.items.length > 0) {
+      let prices = this.props.items.map( (item) => item.price )    
+      return prices.reduce( (total, price) => ( total + price ))      
+    }
+      
+    return 0
   }      
 
   render() {
@@ -34,6 +39,10 @@ export class Cart extends Component {
                 let removeButton = <Button className="button--red" onClickHandler={ (event) => this.props.removeItemHandler(index) }>Remove</Button>
                 return (<Product key={ index } item={ item } actionButton={ removeButton } />)
               })} 
+
+              {
+                this.props.items.length === 0 && <Subtitle>Your cart is empty :(</Subtitle>
+              }
             </div>
           </Col>          
         </Row>

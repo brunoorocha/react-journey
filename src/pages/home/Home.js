@@ -14,6 +14,11 @@ const links = [
         id: 2,
         title: "Shopping Cart",
         url: "/cart"
+    },
+    {
+        id: 3,
+        title: "Pokedex",
+        url: "/pokedex"
     }
 ]    
 

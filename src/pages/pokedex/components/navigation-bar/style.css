@@ -1,0 +1,16 @@
+
+.navigation-bar {
+    background-color: #f87284;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;    
+}
+
+.navigation-bar .navigation-title {
+    font-family: "Source Sans Pro";
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 32px;
+    color: #ffffff;    
+}

@@ -1,4 +1,8 @@
 
+.todo-list {
+    padding: 16px;
+}
+
 .action-button {
     font-family: "Source Sans Pro";    
     font-size: 16px;

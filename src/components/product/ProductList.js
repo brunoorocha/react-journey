@@ -36,7 +36,7 @@ export class ProductList extends Component {
 
   render() {
     return (
-      <div>        
+      <div className="product-list">        
         <CartContextConsumer>
           { context => (
             this.state.items.map( (item, index) => {          

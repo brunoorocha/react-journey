@@ -2,6 +2,7 @@
 .bullet-list {
     background-color: #f4f4f4;
     padding: 8px 32px;
+    margin: 16px 0;
 }
 
 .bullet-list > li {

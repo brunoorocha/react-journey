@@ -5,10 +5,10 @@ import TodoList from '../../components/todo-list/TodoList'
 
 const Todo = () => {
     return (
-        <React.Fragment>
+        <div className="todo-list">
             <Title>My React TODO List</Title>            
             <TodoList />
-        </React.Fragment>            
+        </div>            
     )
 }
 

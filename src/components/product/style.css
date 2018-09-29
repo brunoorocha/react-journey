@@ -1,6 +1,12 @@
 
+.product-list {    
+    padding: 16px;
+    margin-top: 16px;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
 .product {
-    padding: 8px;
+    padding: 16px;        
     border-bottom: 1px solid hsl(0, 0%, 86%);
 }
 

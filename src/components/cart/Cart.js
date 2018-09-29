@@ -48,7 +48,7 @@ export class Cart extends Component {
         </Row>
         <Row>
           <Col>
-            Total: ${ this.getTotalPrice() }
+            <p className="total-price">Total: ${ this.getTotalPrice() }</p>
           </Col>
         </Row>
       </div>      

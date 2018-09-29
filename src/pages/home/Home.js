@@ -3,6 +3,9 @@ import React from 'react'
 import Title from '../../components/title/Title'
 import Subtitle from '../../components/subtitle/Subtitle'
 import LinkList from '../../components/link-list/LinkList'
+import Row from '../../components/grid/Row'
+import Col from '../../components/grid/Col'
+import './style.css'
 
 const links = [
     {
@@ -23,11 +26,15 @@ const links = [
 ]    
 
 const Home = (props) => (    
-    <React.Fragment>
-        <Title>Hello React</Title>
-        <Subtitle>This application is a set of little apps made by me in my React Learning Journey.</Subtitle>
-        <LinkList itens={ links } />
-    </React.Fragment>            
+    <div className="home">
+        <Row>
+            <Col>
+                <Title>Hello React</Title>
+                <Subtitle>This application is a set of little apps made by me in my React Learning Journey.</Subtitle>
+                <LinkList itens={ links } />
+            </Col>
+        </Row>
+    </div>            
 )
 
 export default Home

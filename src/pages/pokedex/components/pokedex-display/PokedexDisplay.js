@@ -69,6 +69,8 @@ export default class PokedexDisplay extends Component {
 
     onSearchFieldChangeHandler(query) {
         
+        query = query.toLowerCase()
+
         let pokemonsFiltered = this.state.pokemonEntries.filter( (pokemonEntry) => {
             return pokemonEntry.pokemon_species.name.includes(query) && pokemonEntry
         })

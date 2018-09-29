@@ -1,5 +1,15 @@
 
 .cart {
     border: 1px solid hsl(0, 0%, 86%);
-    margin-left: 32px;
+    margin-top: 16px;
+    margin-left: 16px;
+    padding: 16px;
+}
+
+.total-price {
+    margin-top: 16px;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;    
 }

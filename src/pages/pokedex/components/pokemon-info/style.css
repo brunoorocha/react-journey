@@ -8,13 +8,12 @@
 
 .pokemon-info_image {    
     width: 128px;
-    height: 128px;    
-    border-radius: 50%;
-    background-color: hsl(0, 0%, 92%);
+    height: 128px;        
 }
 
 .pokemon-info_name {
     font-family: "Source Sans Pro";
+    text-transform: capitalize;
     font-size: 24px;        
     color: hsl(0, 0%, 21%);
     margin-top: 16px;

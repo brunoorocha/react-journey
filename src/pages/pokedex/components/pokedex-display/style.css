@@ -81,3 +81,13 @@
     border: 1px solid hsl(0, 0%, 86%);
     margin-top: -1px;
 }
+
+
+.pokemon-list li a:hover {       
+    transition: .2s ease-out;
+}
+
+.pokemon-list li a:hover {       
+    color: #f87284;    
+    cursor: pointer;
+}

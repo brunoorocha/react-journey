@@ -94,7 +94,7 @@ export default class PokedexDisplay extends Component {
                 </Row>   
                 <Row>
                     <Col>                                
-                        <PokemonList pokemons={ this.state.pokemonEntriesFiltered.length === 0 ? this.state.pokemonEntries : this.state.pokemonEntriesFiltered } />    
+                        <PokemonList pokemons={ this.state.pokemonEntriesFiltered.length === 0 ? this.state.pokemonEntries : this.state.pokemonEntriesFiltered } onSelectPokemonHandler={ this.props.onSelectPokemonHandler } />    
                     </Col>
                 </Row>                                         
             </div>

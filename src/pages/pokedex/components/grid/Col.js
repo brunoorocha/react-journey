@@ -17,6 +17,7 @@ class Col extends Component {
         let options = ""
         options += this.props.alignItens !== undefined ? " col__align-items--"+ this.props.alignItens : ""
         options += this.props.justifyContent !== undefined ? " col__justify-content--"+ this.props.justifyContent : ""
+        options += this.props.grow !== undefined ? " col__flex-grow--"+ this.props.grow : ""
         
         return options        
     }

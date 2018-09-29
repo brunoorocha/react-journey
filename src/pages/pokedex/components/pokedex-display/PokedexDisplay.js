@@ -82,22 +82,22 @@ export default class PokedexDisplay extends Component {
     }
 
     render() {
-        return (        
-            <div className="pokedex-display">                
+        return (                
+            <div className="pokedex-display">                                
                 <Row>                            
                     <SearchField placeholder="Search by a pokemon name:" onChangeHandler={ this.onSearchFieldChangeHandler } />                            
                 </Row>  
                 <Row>
-                    <Col justifyContent="end">                              
+                    <Col justifyContent="end" grow="2">                              
                         <Dropdown label="Select a region:" options={ this.state.regions } onChangeHandler={ this.onDropdownChangeHandler } />
                     </Col>
                 </Row>   
                 <Row>
-                    <Col>
+                    <Col>                                
                         <PokemonList pokemons={ this.state.pokemonEntriesFiltered.length === 0 ? this.state.pokemonEntries : this.state.pokemonEntriesFiltered } />    
                     </Col>
-                </Row>                                                                               
-            </div>        
+                </Row>                                         
+            </div>
         )
     }
 }

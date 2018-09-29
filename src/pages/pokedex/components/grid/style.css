@@ -8,6 +8,10 @@
     flex-grow: 1;    
 }
 
+.col__flex-grow--3 {    
+    flex-grow: 3; 
+}
+
 .col__align-items--center {    
     align-self: center;
 }
@@ -15,4 +19,9 @@
 .col__justify-content--end {    
     display: flex;
     justify-content: flex-end;
+}
+
+.col__justify-content--center {    
+    display: flex;
+    justify-content: center;
 }

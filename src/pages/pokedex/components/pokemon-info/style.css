@@ -1,0 +1,68 @@
+
+.pokemon-info {
+    flex-grow: 1;
+    margin: 16px;
+    padding: 32px 16px;    
+    background-color: hsl(0, 0%, 96%);
+}
+
+.pokemon-info_image {    
+    width: 128px;
+    height: 128px;    
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 92%);
+}
+
+.pokemon-info_name {
+    font-family: "Source Sans Pro";
+    font-size: 24px;        
+    color: hsl(0, 0%, 21%);
+    margin-top: 16px;
+}
+
+.pokemon-info_progress-bar[value] {
+    -webkit-appearance: none;
+    appearance: none;    
+    height: 8px;        
+}
+
+.pokemon-info_progress-bar[value]::-webkit-progress-bar {
+    background-color: hsl(0, 0%, 92%);
+    border: none;
+    border-radius: 5px;
+}
+
+.pokemon-info_progress-bar[value]::-webkit-progress-value {
+    background-color: #f87284;    
+    border-radius: 5px;
+    transition: .2s ease-out;    
+}
+
+.pokemon-info_stats-area {
+    display: flex;
+    flex-direction: column;    
+    flex-grow: 1;
+    margin-top: 16px;
+}
+
+.pokemon-info_stats {
+    margin: 8px 0;
+    flex-grow: 1;
+    max-width: 300px;
+    align-self: center;
+}
+
+.pokemon-info_stats .pokemon-info_stats-name {
+    display: flex;
+    width: 120px;
+    font-family: "Source Sans Pro";
+    font-size: 14px;        
+    color: hsl(0, 0%, 21%);    
+}
+
+.pokemon-info_stats .pokemon-info_stats-count {
+    font-family: "Source Sans Pro";
+    font-size: 14px;        
+    color: hsl(0, 0%, 21%);    
+    margin-left: 8px;    
+}

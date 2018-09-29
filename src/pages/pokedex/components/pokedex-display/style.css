@@ -1,7 +1,7 @@
 
 .pokedex-display {
-    padding: 16px;
-    flex-grow: 1;
+    padding: 16px;    
+    flex-grow: 1;        
 }
 
 .dropdown {
@@ -54,12 +54,25 @@
     border: 1px solid hsl(204, 86%, 53%);
 }
 
-.pokemon-list {
-    list-style: none;
-    margin-top: 32px;
+.centered {
+    display: flex;
+    justify-content: center;
 }
 
-.pokemon-list li {    
+.container {
+    max-width: 960px;
+    width: 100%;
+}
+
+.pokemon-list {    
+    list-style: none;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;    
+}
+
+.pokemon-list li {   
+    flex-grow: 1;        
     padding: 8px 16px;    
     font-family: "Source Sans Pro";
     font-size: 18px; 
